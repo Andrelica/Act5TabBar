@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: MyHomePage(),
     );
@@ -37,22 +37,22 @@ class _MyHomePageState extends State<MyHomePage> {
           bottom: TabBar(
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), // Creates border
-                color: Color(0xff001653)), //Change
+                color: Color(0xb653000b)), //Change
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
+              Tab(icon: Icon(Icons.info)),
               Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
-              Tab(icon: Icon(Icons.access_time)),
+              Tab(icon: Icon(Icons.local_activity)),
+              Tab(icon: Icon(Icons.money)),
             ],
           ),
-          title: Text('Tabs Andrea Sanchez'),
+          title: Text('Camiones Volvo'),
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
+            Icon(Icons.info, size: 350),
             Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
-            Icon(Icons.access_time, size: 350),
+            Icon(Icons.local_activity, size: 350),
+            Icon(Icons.money, size: 350),
           ],
         ),
       ),
